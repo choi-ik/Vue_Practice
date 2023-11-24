@@ -1,7 +1,4 @@
 <template>
-  <h1>
-    {{ msg }}
-  </h1>
   <Hello />
 </template>
 
@@ -13,9 +10,7 @@ export default {
     Hello,
   },
   data() {
-    return {
-      msg: "hello WebPack!!!",
-    };
+    return {};
   },
 };
 </script>
