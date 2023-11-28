@@ -30,7 +30,12 @@ module.exports = {
       },
       {
         test: /\.s?css$/,
-        use: ["vue-style-loader", "css-loader", "sass-loader"], // 오른쪽에서 왼쪽으로 먼저 읽힘
+        use: [
+          "vue-style-loader",
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ], // 오른쪽에서 왼쪽으로 먼저 읽힘
       },
     ],
   },
